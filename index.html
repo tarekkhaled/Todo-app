@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Create your todo ">
+  <meta name="keywords" content="todes,App,Remove,Add,Unlimited">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Kurale|Raleway" rel="stylesheet">
+
+  <title>Todo App</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>To-do App</h1>
+      <p>What you have to do today?</p>
+    </div>
+  </header>
+
+  <!-- part of filter todo -->
+  <div class="filter-section">
+    <input id="filter-todo" placeholder="filter todos.." type="text">
+    <label>
+      <input id="checked" type="checkbox"> hide Completed
+    </label>
+  </div>
+
+  <!-- this the place the todo will be shown -->
+  <div id="results">
+  </div>
+
+  <!-- Add todo to our localstorage -->
+  <form id="form">
+    <div class="form">
+    <input placeholder="Create a new todo ...." name="text">
+    <button>Add Todo</button>
+  </div>
+  </form>
+
+
+
+  <script src="js/uuid.js"></script>
+  <script src="js/todo-functions.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

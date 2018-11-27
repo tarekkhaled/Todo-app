@@ -1,0 +1,149 @@
+/* the Colors will be used
+#6F439C
+#353239
+#2B292E // background
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #2B292E;
+}
+
+header {
+  background-color: #6F439C;
+}
+
+.container {
+  color: #fff;
+  padding: 26px 409px;
+}
+
+.container h1 {
+  padding-bottom: 6px;
+}
+
+.filter-section {
+  background-color: #353239;
+  height: 60px;
+  width: 100%;
+}
+
+.filter-section #filter-todo {
+  margin: 15px 0px;
+  margin-left: 409px;
+  height: calc(100% - 30px);
+  width: 15%;
+  padding: 5px 10px;
+}
+
+.filter-section #filter-todo::placeholder {
+  padding: 0px 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.filter-section label {
+  font-size: 18px;
+  padding-left: 18px;
+  color: #fff;
+}
+
+/*style the results from javascript file  */
+/*this is the parent div */
+#results {
+  margin: 42px 407px;
+  max-width: 600px;
+}
+
+/* summary  */
+#results h2 {
+  color: lemonchiffon;
+  font-weight: bold;
+  font-size: 29px;
+  padding-bottom: 26px;
+}
+
+/* make sure of the list todo will be shown have the right propeties */
+#results .list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #353239;
+  padding: 19px;
+  cursor: pointer;
+  transition: all 0.7s;
+  color: #fff;
+  margin-bottom: 12px;
+  border: 1px solid #423e47;
+
+}
+
+
+.check-sign {
+  margin-right: 5px;
+}
+
+#results .list-item:hover {
+  background-color: #4b4650;
+}
+
+.list-item-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.remove-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px;
+  transition: all 0.5s;
+  font-size: 18px;
+  color: #aaa;
+}
+
+.remove-button:hover {
+  text-decoration: underline;
+  color: : #9c9797;
+}
+
+
+/* the form style */
+.form   {
+ display: inline;
+    border: none;
+  margin: 0px 405px;
+  padding-bottom: 50px;
+  }
+
+.form input {
+    height: 30px;
+    font-size: 13px;
+    padding: 5px 10px;
+    color: rgb(80, 80, 80);
+  }
+
+.form input:focus {
+  border : none
+}
+
+.form button {
+  cursor: pointer ;
+  height: 30px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: 2px solid #7044a0 ;
+  background-color: #7044a0;
+  color: #fff;
+  transition: all 1s ;
+
+}
+
+.form button:hover {
+  background-color: #5c2e8e;
+}
